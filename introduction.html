@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>introduction - iTLゲームサークルのWebサイト</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bar.js"></script>
+  <script src="js/cont.js"></script>
+</head>
+<body>
+  <div class="whole">
+    <header class="header">
+      <div class="hello">
+        <img src="images/logo.png" alt="ロゴ" width="60px" height="60px">
+				<a href="index.html"><img src="images/title.png" alt="iTLゲームサークル" width="300px" height="60px"></a>
+      </div>
+      <nav class="list">
+        <ul>
+          <li><a href="infomations.html">infomations</a></li>
+          <li><a href="contents.html">contents</a></li>
+          <li><a href="contact.html">contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+          <h2>Introduction</h2><hr>
+          <h5>ゲームの編集作業をするまえに準備しておかなければならないことをまとめました。</h5>
+          <h3>Step 1 GitHubの導入</h3>
+          <h4>0．</h4>
+          GitHub は ファイルを複数人で管理するソフトウェアですよ。みんなで同じファイルを編集するために、みんなのPCでGitHub やGitHub Desktop を使えるようにしてもらいますよ。<br><br>
+
+          <h4>1．GitHubのアカウント作成（持っている人はスキップ）</h4>
+          GitHubを使うには、GitHubアカウントの登録が必要なので、GitHubのアカウントを持っていないメンバーは、<a href="https://github.com/" target="_blank">GitHub</a>にアクセスして、GitHubのアカウントを作ってくださいね。<br><br>
+
+          <h4>1．1 Collaboratorになる。</h4>
+          サークルのDiscordにGitHubのユーザー名を送ってくださいね。そうすると、サークル長から、GitHubに登録したメールアドレスに、Collaboratorの招待が送られてくると思いますよ。Collaboratorになるとサークルのゲームのファイルを編集できるようになりますよ。<br><br>
+
+          <h4>1．2 Unityのバージョンを確認する。</h4>
+          Unityのバージョンが合っていないと、共同で編集できなくなるよ。<br>
+          Unity Hub を開いて、左のリストの下の方にある、「インストール」を選んで、「2020.3.15f2」が入っているかどうか確認してくださいね。<br>
+          入っていなかった場合、右上の「インストール」を選んで、「Unity 2020.3.15f2」を加えてね。「次へ」を押すと、モジュールを追加する画面になるので、下の方に「Web GL Build Support」があるので、それを選択して、「次へ」を押してね。<br>
+          ※注意：Step 1の作業が終わるまでUnityの編集画面は開かないでね。<br><br>
+
+          <h4>2．GitHub Desktop のインストール</h4>
+          GitHub Desktop は、GitHubをわかりやすく使うためのツールですよ。<a href="https://desktop.github.com/" target="_blank">GitHub Desktop</a>からインストールしてね。<br>インストールが終わったら、自分のGitHubのアカウントを使えるようにしておいてくださいね。<br><br>
+
+          <h4>3．GitHub でゲームのファイルにアクセスする。</h4>
+          サークルのゲームのレポジトリ(Discordに載っています)にアクセスしてね。サークルのゲームのレポジトリ（共有しているフォルダ）に移動するよ。このページの右の方にある、緑色の、「Code」というボタンを押して、「Open with GitHub Desktop」というボタンを押してくださいね。そうすると、GitHub Desktopが開いて、「Clone a repository」というウインドウが出るよ。Repository URL はいじらないでね。下にある「Local path」に、ゲームのファイルを格納したい場所を入力してね。 「Clone」を押すと、サークルのゲームのフォルダが選択した場所にクローンされるよ。<br>
+          クローンの説明→（<a href="https://docs.github.com/ja/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository " target="_blank">○</a>）<br><br>
+
+          <h4>4．Branchを作成する。</h4>
+          Branchとは、端的に言えば、それぞれのファイルを編集する際に、更新するファイルが競合しないように、編集する部屋を分けるような事だよ。<br>
+          GitHub Desktop を開いて、左上のボタンから、サークルのレポジトリに移動してね。隣のボタンは「Current branch」のはずなので、そこのボタンを押してね。ウインドウが出るはずなので、「New branch」を押してね。Create a branch というウインドウが出るので、「name」に自分の名前を入れたbranchの名前を設定してね。<br>
+          次に、先程作成したbranchに移動してね。＊全ての作業は自分のbranchで行ってください。<br><br>
+
+
+          <h3>Step 2 Unityで編集をできるようにする。</h3>
+          <h4>1．ゲームのファイルをUnity Hubに追加する。</h4>
+          Unity Hub を開くと、「プロジェクト」という画面が表示されるので、右上の「リストに追加」を押してね。エクスプローラーが表示されるので、先程作成したクローンのフォルダを選択してね。そうすると、「プロジェクト」にサークルのゲームのフォルダが追加されますよ。<br><br>
+
+          <h4>☆ ファイルを編集・更新する。</h4>
+
+          <font color="#ff0000" size="4"><b>＊ファイルを編集する前に、GitHub Desktopで、今いるブランチが自分のものである事を必ず確認してね。自分のブランチ以外の場所で編集作業をしないでください！<br></b></font><br>
+
+          1．Unity での編集を反映させる前に、Unity を閉じておいてね。<br>
+          2．GitHub Desktopの「Changes」に、編集したファイルが表示されるよ。<br>
+          ＊もし、ファイル名の末尾に「.log」があるファイルがある場合、チェックを外しましょう。Discardしても問題ありません。<br>
+          3．右上の「Fetch Origin」を押して、FetchあるいはPullをしてね。（他の人の更新を反映させるため）<br>
+          4．下の方にある「Commit to 〇〇」という青いボタンを押してね。そうすると、上の方に、「Push origin」というボタンが現れるので、このボタンを押すと、自分のブランチに変更内容が反映されるますよ。<br><br>
+
+          ＊ゲームの制作そのものについての質問はサークル長にお願いします。<br>
+          ・誰がどのステージ（Scene）を編集するべきかについては、Discordに載っていますよ。<br><br><br>
+
+      </div>
+    </main>
+    <footer>
+      <p>&copy;Copyright iTLゲームサークル. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
