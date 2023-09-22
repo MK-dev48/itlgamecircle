@@ -305,6 +305,17 @@ footer{
   padding: 10px 10px 10px 10px;
 }
 
+/*gameparty*/
+.gameparty{
+  text-align: center;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+.gameparty img {
+  padding: auto;
+  width: 90%;
+}
+
 /*スマホ向け*/
 @media(max-width: 767px){
 
